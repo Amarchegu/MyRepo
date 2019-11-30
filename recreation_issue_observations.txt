@@ -1,0 +1,46 @@
+recreation issues:
+
+drop tables error: ok as it doesnt exist
+cannot add users
+ODS.[Claims_with_Payments] was empty:hope not required
+
+EDW schema creation:
+Warning: The table "vms_6_mo_hosp_temp" has been created, but its maximum row size exceeds the allowed maximum of 8060 bytes. INSERT or UPDATE to this table will fail if the resulting row exceeds the size limit.
+Warning: The table "vms_6_mo_hosp" has been created, but its maximum row size exceeds the allowed maximum of 8060 bytes. INSERT or UPDATE to this table will fail if the resulting row exceeds the size limit.
+
+EDW creation:
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5155
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5251
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5558
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5654
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5683
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 2760, Level 16, State 1, Line 5731
+The specified schema name "hosp_0201" either does not exist or you do not have permission to use it.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6972
+Invalid column name 'Tsat_blw_20_Alb_blw_3.5'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6973
+Invalid column name 'HGBX3_blw_29.9_DeltaSYSBPDecrease_less_10'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6974
+Invalid column name 'HGBX3_blw_29.9_Tsat_blw_20'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6975
+Invalid column name 'HGBX3_blw_29.9_DeltaSYSBPIncrease_grt_10'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6976
+Invalid column name 'AbleToStand_blw_50_PostPulse_grt_95'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6977
+Invalid column name 'Tsat_blw_20_PostPulse_grt_95'.
+Msg 207, Level 16, State 1, Procedure vw_USRPatientPursuitList, Line 6978
+Invalid column name 'Alb_blw_3.5_PostPulse_grt_95'.
+
+
+
+IDS:
+Loaded FACILITY is IDS but data not matching.count
+reason:facility includes allmonth data but in the currentmonth may be someofthe data not there.so better to export this table.
+nowmatching.
+IDS: absnce count is matching.,labresult count matching.,problemlist count is matching,flowsheet count is matching.
